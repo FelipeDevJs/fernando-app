@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Site</h1>
+    <h1>Movimentação de Pessoa</h1>
+
+    <div class="form-busca">
+        <p>Buscar funcionário por CPF</p>
+        <form id="formBusca">
+            <input type="text" id="cpfInput" placeholder="Digite o CPF">
+            <button type="submit">Buscar</button>
+        </form>
+        <button id="limparBtn">Salvar / Atualizar</button>
+    </div>
+
+    <div class="visu-table">
+        <table>
+            <tr>
+                <td style="width:25%" class="center">
+                    <h2>NOVA</h2>Atacarejo
+                </td>
+                <td style="width:45%" class="center">
+                    <div>FR.022.RH.00</div>
+                    <h2>MOVIMENTAÇÃO DE PESSOAL - MDP</h2>
+                </td>
+                <td style="width:30%" class="center">Página: 01<br>Rev. 0</td>
+            </tr>
+            <tr>
+                <td colspan="2"><b>Local:</b> <input type=text value="TERESÓPOLIS"></td>
+                <td><b>Data:</b> <input type=text></td>
+            </tr>
+            <tr>
+                <td colspan="2"><b>Nome/Cargo requisitante:</b> <input type=text></td>
+                <td><b>Centro de Custo:</b> <input type=text value="RH"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <b>Tipo de movimentação:</b><br><br>
+                    <label><input type=checkbox checked> Promoção</label>
+                    <label style="margin-left:40px"><input type=checkbox> Transferência</label>
+                    <label style="margin-left:40px"><input type=checkbox> Enquadramento</label>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Matrícula nº:</b><input type=text></td>
+                <td><b>Nome do Colaborador:</b><input type=text></td>
+                <td><b>Admissão:</b><input type=text></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr class="bold center">
+                <td style="width:28%">ITEM</td>
+                <td>DE</td>
+                <td>PARA</td>
+            </tr>
+            <tr>
+                <td><b>Cargo</b></td>
+                <td><input type=text></td>
+                <td><input type=text></td>
+            </tr>
+            <tr>
+                <td><b>Área</b></td>
+                <td><input type=text></td>
+                <td><input type=text></td>
+            </tr>
+            <tr>
+                <td><b>Centro de custo</b></td>
+                <td><input type=text></td>
+                <td><input type=text></td>
+            </tr>
+            <tr>
+                <td><b>Salário</b></td>
+                <td><input type=text></td>
+                <td><input type=text></td>
+            </tr>
+            <tr>
+                <td><b>Impacto de passagem</b></td>
+                <td><input type=text></td>
+                <td><input type=text></td>
+            </tr>
+            <tr>
+                <td><b>Unidade</b></td>
+                <td><input type=text></td>
+                <td><input type=text></td>
+            </tr>
+            <tr>
+                <td><b>Percentual - Reajuste</b></td>
+                <td colspan="2"><input type=text></td>
+            </tr>
+            <tr>
+                <td colspan="3"><b>Justificativa da alteração</b><br><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="3"><b>APROVAÇÕES (INSERIR NOME, DATA E ASSINATURA)</b><br><br>
+                    <table style="width:100%">
+                        <tr>
+                            <td>Superior Imediato</td>
+                            <td>RH</td>
+                            <td>Diretoria</td>
+                        </tr>
+                        <tr>
+                            <td style="height:70px"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
